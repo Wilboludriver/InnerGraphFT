@@ -178,6 +178,7 @@ def main(**kwargs):
         dataset_config,
         split="train",
     )
+    breakpoint()
 
     if not train_config.enable_fsdp or rank == 0:
         print(f"--> Training Set Length = {len(dataset_train)}")
